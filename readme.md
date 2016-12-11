@@ -24,13 +24,13 @@ Default
 sls
 ```
 
-With specified depth
+With specified a maximum depth
 
 ```
 sls 3
 ```
 
-Showing all files (include those hidden)
+Showing all files (include hidden ones)
 
 ```
 sls -a
@@ -42,7 +42,7 @@ Add color (simple gray shades)
 sls -c
 ```
 
-Combination
+Combination of previous parameters
 
 ```
 sls -ac 3
