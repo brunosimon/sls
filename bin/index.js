@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+'use strict'
+
 // Dependencies
 let FileTree = require( './FileTree.js' ),
     fs       = require( 'fs' )

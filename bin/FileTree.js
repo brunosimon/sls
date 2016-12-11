@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * File/Folder tree
  */
