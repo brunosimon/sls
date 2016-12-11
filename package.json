@@ -2,7 +2,10 @@
   "name": "sls",
   "version": "0.0.1",
   "description": "Show structured files and folders from the terminal",
-  "main": "index.js",
+  "bin": {
+    "sls": "bin/index.js"
+  },
+  "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
