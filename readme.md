@@ -16,6 +16,11 @@ Simply display a structured file hierarchy inside the terminal
  └─index.html
 ```
 
+### Installation
+
+- Install [Node.js](https://nodejs.org/en/)
+- Install sls globally using npm `npm install -g sls`
+
 ### Usage
 
 Default 
