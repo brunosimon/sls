@@ -29,7 +29,7 @@ Default
 sls
 ```
 
-With specified a maximum depth
+With specified a maximum depth (default = 5)
 
 ```
 sls 3
