@@ -64,6 +64,10 @@ function readDir( _dir, _depth = 0 )
             }
         }
     }
+    else
+    {
+        fileTree.addFile( _dir + '/' + '[…]' )
+    }
 }
 
 readDir( '.' )
