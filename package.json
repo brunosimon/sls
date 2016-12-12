@@ -1,6 +1,6 @@
 {
   "name": "sls",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Show structured files and folders from the terminal",
   "bin": {
     "sls": "bin/index.js"
