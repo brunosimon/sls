@@ -7,7 +7,7 @@ let FileTree = require( './FileTree.js' ),
     fs       = require( 'fs' )
 
 // Parameters
-let parameters = { all: false, color: false, depth: 5 }
+let parameters = { all: false, color: false, depth: 2 }
 
 for( let parameter of process.argv )
 {
