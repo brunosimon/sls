@@ -29,7 +29,7 @@ Default
 sls
 ```
 
-With specified a maximum depth (default = 5)
+With specified a maximum depth (default = 2)
 
 ```
 sls 3
@@ -53,10 +53,3 @@ Combination of previous parameters
 sls -ac 3
 ```
 
-### Todo
-
-- [x] Simple usage
-- [x] Colors
-- [x] Depth parameter
-- [x] Hidden parameter
-- [ ] Publish to NPM
