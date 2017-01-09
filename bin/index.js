@@ -39,34 +39,33 @@ function readDir( _dir, _depth = 0 )
     // Increase depth
     _depth += 1
 
-    // Depth not yet reached
-    if( _depth < parameters.depth + 1 )
+    // Read files sync
+    let files = fs.readdirSync( _dir )
+    
+    // Each file found
+    for( let name of files )
     {
-        // Read files sync
-        let files = fs.readdirSync( _dir )
-        
-        // Each file found
-        for( let name of files )
-        {
-            let path = _dir + '/' + name
+        let path = _dir + '/' + name
 
-            if( parameters.all || name.indexOf( '.' ) !== 0 )
+        if( parameters.all || name.indexOf( '.' ) !== 0 )
+        {
+            if( fs.statSync( path ).isDirectory() )
             {
-                if( fs.statSync( path ).isDirectory() )
+                if( _depth + 1 > parameters.depth )
+                {
+                    fileTree.addFolder( path + '(+)' )
+                }
+                else
                 {
                     fileTree.addFolder( path )
                     readDir( path, _depth )
                 }
-                else
-                {
-                    fileTree.addFile( path )
-                }
+            }
+            else
+            {
+                fileTree.addFile( path )
             }
         }
-    }
-    else
-    {
-        fileTree.addFile( _dir + '/' + '[…]' )
     }
 }
 
