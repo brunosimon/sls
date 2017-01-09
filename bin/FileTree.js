@@ -558,8 +558,7 @@ class FileTree
                 }
 
                 addToString( '─', 'structure' )
-                addToString( _folder.name, 'folder' )
-                addToString( '/', 'structure' )
+                addToString( _folder.name + '/', 'folder' )
 
                 // Last
                 last.push( i === folderKeys.length - 1 && fileKeys.length === 0 )
